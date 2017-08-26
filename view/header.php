@@ -1,7 +1,8 @@
 <?php 
   include_once 'admin_session_check.php';
   landing_page_check();
-  $raw_data = $_SESSION['admin'];
+  $raw_data = $_SESSION['admin_username'];
+  print_r($raw_data);
  ?>
 
 <!DOCTYPE html>
