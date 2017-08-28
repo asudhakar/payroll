@@ -2,7 +2,6 @@
   include_once 'admin_session_check.php';
   landing_page_check();
   $raw_data = $_SESSION['admin_username'];
-  print_r($raw_data);
  ?>
 
 <!DOCTYPE html>
@@ -60,6 +59,7 @@
         <ul class="sidebar-menu">
           <li><a href="home.php"><i class="fa fa-circle-o text-red "></i> <span>Add Staff</span></a></li>
           <li><a href="generate_salary.php"><i class="fa fa-circle-o text-yellow "></i> <span>Generate Salary</span></a></li>
+          <li><a href="generated_salary.php"><i class="fa fa-circle-o text-aqua "></i> <span>Generated Salary</span></a></li>
 
         </ul>
       </section>

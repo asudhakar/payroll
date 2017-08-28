@@ -1,13 +1,10 @@
 <?php 
 	include_once '../model/db.php';
-
 	$conn = db_connect();
 	$raw_data = $_POST;
-	if (insert('staff_details',$raw_data,$conn)) {
-		print_r($raw_data);	
+	if (insert('staffs',$raw_data,$conn)) {
+		header("Location: ../view/home.php?status=sucess");
 	}
 	else{
-		echo "no inserted";
+		header("Location: ../view/home.php?status=error");
 	}
-
- ?>
